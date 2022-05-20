@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
   html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea, select {
     background:transparent;
     border:0;
@@ -62,5 +65,36 @@ export const GlobalStyle = createGlobalStyle`
     left: 0;
     top: 0;
   }
-
+  .MuiPaper-root { 
+    background-color: #ed0678;
+    width: 280px;
+    .options-menu {
+      display: block;
+      margin-top: 16px;
+      ul {
+        display: block;
+        li {
+          display: block;
+          a {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            color: #fff;
+            transition: color 0.2s;
+            svg {
+              color: #fff;
+              margin-right: 8px;
+              transition: color 0.2s;
+            }
+            &:hover {
+              color: #120C0C;
+              svg {
+                color: #120C0C;
+            }
+            }
+          }
+        }
+      }
+    }
+  }
 `;
