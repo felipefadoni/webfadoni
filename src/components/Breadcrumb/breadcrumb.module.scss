@@ -1,0 +1,27 @@
+.breadcrumbRoot {
+  margin: 1rem 0;
+  a {
+    color: #ed0678;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  li {
+    color: #ed0678;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  p {
+    color: #ed0678;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+  }
+}

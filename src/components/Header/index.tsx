@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdSearch } from "react-icons/md";
 import { RiMenu5Line } from "react-icons/ri";
-import { HeaderContainer } from "./styles";
+import styles from "./header.module.scss";
 
 type Props = {
   handleOpenMenu: () => void;
@@ -15,13 +15,13 @@ export default function Header({ handleOpenMenu }: Props) {
     <Container>
       <Grid container>
         <Grid item xs={12}>
-          <HeaderContainer>
-            <div className="center-header">
-              <div className="header-left">
+          <header className={styles.header}>
+            <div className={styles.centerHeader}>
+              <div className={styles.headerLeft}>
                 <button title="Menu" onClick={handleOpenMenu}>
                   <RiMenu5Line size={28} />
                 </button>
-                <div className="logo">
+                <div className={styles.logo}>
                   <Link href="/">
                     <a title="Voltar para o início">
                       <Image
@@ -35,16 +35,16 @@ export default function Header({ handleOpenMenu }: Props) {
                   </Link>
                 </div>
               </div>
-              <div className="header-right">
+              <div className={styles.headerRight}>
                 <button title="Buscar">
                   <MdSearch size={32} />
                 </button>
-                <div className="search">
+                <div className={styles.search}>
                   <input type="text" placeholder="Buscar" />
                 </div>
               </div>
             </div>
-          </HeaderContainer>
+          </header>
         </Grid>
       </Grid>
     </Container>

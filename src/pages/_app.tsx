@@ -1,16 +1,18 @@
 import { CssBaseline, Drawer } from "@mui/material";
+import "@nextcss/reset";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import { MdHomeFilled, MdMarkChatUnread } from "react-icons/md";
-import { GlobalStyle } from "src/styles/global-styles";
 import { Footer, Header, HeaderBanner } from "../components";
 
 type Anchor = "top" | "left" | "bottom" | "right";
 
+import "../styles/global.scss";
+
 function MyApp({ Component, pageProps }: AppProps) {
-  const [openMenu, setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -28,8 +30,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <GlobalStyle />
-      <CssBaseline />
       <Head>
         <title>WebFadoni programação, notícias e tecnologia</title>
         <meta
@@ -66,6 +66,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <HeaderBanner />
       <Component {...pageProps} />
       <Footer />
+      <CssBaseline />
     </>
   );
 }

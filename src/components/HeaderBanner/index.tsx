@@ -1,9 +1,9 @@
-import { HeaderBannerContainer } from "./styles";
+import styles from "./header-banner.module.scss";
 
 export default function HeaderBanner() {
   return (
-    <HeaderBannerContainer>
-      <div className="header-banner-center">728x90</div>
-    </HeaderBannerContainer>
+    <div className={styles.bannerHeader}>
+      <div className={styles.headerBannerCenter}>728x90</div>
+    </div>
   );
 }

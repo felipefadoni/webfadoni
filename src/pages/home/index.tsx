@@ -1,9 +1,11 @@
 import imageTeste from "@/assets/imagem.jpg";
+
 import { Container, Grid } from "@mui/material";
-import type { NextPage } from "next";
+import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ContainerDestaques } from "../../styles/home-styles";
+
+import styles from "./home.module.scss";
 
 const news = [
   {
@@ -70,11 +72,11 @@ const news = [
 
 const Home: NextPage = () => {
   return (
-    <ContainerDestaques>
+    <div id={styles.rootHome}>
       <Container>
         <Grid container mt={2} spacing={2} alignItems="center">
           <Grid item xs={12}>
-            <div className="primary">
+            <div className={styles.primary}>
               <Link href="/noticia/principal">
                 <a
                   title="Google lança 3 novos cursos com certificados
@@ -105,7 +107,7 @@ const Home: NextPage = () => {
             <Grid container spacing={2}>
               {news.map((item) => (
                 <Grid key={item.url} item xs={12} sm={6} md={4} lg={4}>
-                  <div className="secondary">
+                  <div className={styles.secondary}>
                     <Link href={item.url}>
                       <a>
                         <Image
@@ -114,7 +116,7 @@ const Home: NextPage = () => {
                           loading="lazy"
                           layout="responsive"
                         />
-                        <div className="text">
+                        <div className={styles.text}>
                           <time>{item.time}</time>
                           <h3>{item.titulo}</h3>
                         </div>
@@ -127,7 +129,7 @@ const Home: NextPage = () => {
           </Grid>
         </Grid>
       </Container>
-    </ContainerDestaques>
+    </div>
   );
 };
 

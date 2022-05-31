@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-export const ContainerDestaques = styled.div`
+#rootHome {
   .primary {
     display: block;
     a {
@@ -46,11 +44,7 @@ export const ContainerDestaques = styled.div`
         position: absolute;
         bottom: 0;
         background: rgb(0, 0, 0);
-        background: linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 1) 0%,
-          rgba(0, 0, 0, 0) 100%
-        );
+        background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
         padding: 0.5rem;
         time {
           font-size: 0.7rem;
@@ -95,4 +89,4 @@ export const ContainerDestaques = styled.div`
       }
     }
   }
-`;
+}
