@@ -2,7 +2,6 @@ import { Container, Grid } from '@mui/material';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 
 import imageTeste from '@/assets/imagem.jpg';
 import { Breadcrumb } from '../../components';
@@ -10,9 +9,6 @@ import { Breadcrumb } from '../../components';
 import styles from './noticia-id.module.scss';
 
 const Post: NextPage = () => {
-  const router = useRouter();
-  const { id } = router.query;
-
   return (
     <>
       <Head>
