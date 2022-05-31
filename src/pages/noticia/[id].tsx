@@ -1,5 +1,5 @@
 import { Container, Grid } from '@mui/material';
-import { NextPage } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -8,7 +8,9 @@ import { Breadcrumb } from '../../components';
 
 import styles from './noticia-id.module.scss';
 
-const Post: NextPage = () => {
+const Post: NextPage = (props) => {
+  console.log(props);
+
   return (
     <>
       <Head>
@@ -128,6 +130,17 @@ const Post: NextPage = () => {
       </div>
     </>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+  const { id } = params as { id: string };
+
+  return {
+    props: {
+      nome: 'Felipe',
+      id,
+    },
+  };
 };
 
 export default Post;
