@@ -1,72 +1,72 @@
-import { Container, Grid } from "@mui/material";
-import { NextPage } from "next";
-import Image from "next/image";
-import Link from "next/link";
+import { Container, Grid } from '@mui/material';
+import { NextPage } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import styles from "./home.module.scss";
+import styles from './home.module.scss';
 
-import imageTeste from "@/assets/imagem.jpg";
+import imageTeste from '@/assets/imagem.jpg';
 
 const news = [
   {
-    url: "/noticia/teste-01",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-01',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-02",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-02',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-03",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-03',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-04",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-04',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-05",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-05',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-06",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-06',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-01",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-01',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-02",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-02',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-03",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-03',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-04",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-04',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-05",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-05',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
   {
-    url: "/noticia/teste-06",
-    titulo: "Google lança 3 novos cursos com certificados profissionalizantes",
-    time: "04/05/2022 - 13:19",
+    url: '/noticia/teste-06',
+    titulo: 'Google lança 3 novos cursos com certificados profissionalizantes',
+    time: '04/05/2022 - 13:19',
   },
 ];
 
@@ -83,19 +83,13 @@ const Home: NextPage = () => {
                     profissionalizantes"
                 >
                   <time>May 20, 2022 2:00 a.m. PT</time>
-                  <h3>
-                    Google lança 3 novos cursos com certificados
-                    profissionalizantes
-                  </h3>
+                  <h3>Google lança 3 novos cursos com certificados profissionalizantes</h3>
                   <p>
-                    O Google está abrindo a semana marcada pelo Dia do
-                    Trabalhador lançando, nesta segunda-feira (2), três novos
-                    cursos profissionalizantes, com certificado da empresa de
-                    tecnologia Coursera. As três opções de formação, que irão se
-                    juntar ao já conhecido Suporte de TI, não exigem nenhum tipo
-                    de conhecimento específico na área e são voltados para
-                    aqueles que querem entrar no mercado de trabalho, mudar de
-                    área profissional ou crescer na carreira.
+                    O Google está abrindo a semana marcada pelo Dia do Trabalhador lançando, nesta segunda-feira (2),
+                    três novos cursos profissionalizantes, com certificado da empresa de tecnologia Coursera. As três
+                    opções de formação, que irão se juntar ao já conhecido Suporte de TI, não exigem nenhum tipo de
+                    conhecimento específico na área e são voltados para aqueles que querem entrar no mercado de
+                    trabalho, mudar de área profissional ou crescer na carreira.
                   </p>
                 </a>
               </Link>
@@ -110,12 +104,7 @@ const Home: NextPage = () => {
                   <div className={styles.secondary}>
                     <Link href={item.url}>
                       <a>
-                        <Image
-                          src={imageTeste}
-                          alt="WebFadoni"
-                          loading="lazy"
-                          layout="responsive"
-                        />
+                        <Image src={imageTeste} alt="WebFadoni" loading="lazy" layout="responsive" />
                         <div className={styles.text}>
                           <time>{item.time}</time>
                           <h3>{item.titulo}</h3>
