@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import styles from "./home.module.scss";
 
-import imageTeste from "../../assets/imagem.jpg";
+import imageTeste from "@/assets/imagem.jpg";
 
 const news = [
   {
