@@ -7,20 +7,17 @@ import { useState } from 'react';
 import { MdHomeFilled, MdMarkChatUnread } from 'react-icons/md';
 import { Footer, Header, HeaderBanner } from '../components';
 
-type Anchor = 'top' | 'left' | 'bottom' | 'right';
-
 import '../styles/global.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [openMenu, setOpenMenu] = useState(false);
 
-  const toggleDrawer = (anchor: Anchor, open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+  const toggleDrawer = () => (event: KeyboardEvent | MouseEvent) => {
     if (
       event.type === 'keydown' &&
-      ((event as React.KeyboardEvent).key === 'Tab' || (event as React.KeyboardEvent).key === 'Shift')
-    ) {
+      ((event as KeyboardEvent).key === 'Tab' || (event as KeyboardEvent).key === 'Shift')
+    )
       return;
-    }
 
     setOpenMenu(!openMenu);
   };
@@ -39,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
-      <Drawer open={openMenu} onClose={toggleDrawer('left', false)}>
+      <Drawer open={openMenu} onClose={toggleDrawer()}>
         <div className="options-menu">
           <ul>
             <li>
