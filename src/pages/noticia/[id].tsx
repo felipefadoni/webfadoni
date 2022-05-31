@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-import imageTeste from "@/assets/imagem.jpg";
+import imageTeste from "../../assets/imagem.jpg";
 import { Breadcrumb } from "../../components";
 
 import styles from "./noticia-id.module.scss";
