@@ -156,7 +156,7 @@ a {
   top: 0;
 }
 .MuiPaper-root {
-  background-color: #ed0678;
+  background-color: #ed0678 !important;
   width: 280px;
   .options-menu {
     display: block;
@@ -169,17 +169,17 @@ a {
           display: flex;
           align-items: center;
           padding: 1rem;
-          color: #fff;
+          color: #fff !important;
           transition: color 0.2s;
           svg {
-            color: #fff;
+            color: #fff !important;
             margin-right: 8px;
             transition: color 0.2s;
           }
           &:hover {
-            color: #120c0c;
+            color: #120c0c !important;
             svg {
-              color: #120c0c;
+              color: #120c0c !important;
             }
           }
         }
