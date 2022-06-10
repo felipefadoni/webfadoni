@@ -10,7 +10,14 @@ const nextConfig = {
     ];
   },
   images: {
-    domains: ['localhost', 'pubimg.band.uol.com.br', 'www.cnet.com', 'www.zdnet.com', 'blog.logrocket.com'],
+    domains: [
+      'localhost',
+      'pubimg.band.uol.com.br',
+      'www.cnet.com',
+      'www.zdnet.com',
+      'blog.logrocket.com',
+      'cdn.pixabay.com',
+    ],
   },
 };
 
