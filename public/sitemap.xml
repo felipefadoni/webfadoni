@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://webfadoni.com/</loc>
+  <lastmod>2022-06-10T04:04:13+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://webfadoni.com/noticia/como-o-astro-se-compara-ao-next-js-para-aplicativos-react</loc>
+  <lastmod>2022-06-10T04:04:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webfadoni.com/noticia/como-criar-aplicativo-express-js-com-typescript</loc>
+  <lastmod>2022-06-10T04:04:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webfadoni.com/noticia/sistema-de-modulos-em-node-js</loc>
+  <lastmod>2022-06-10T04:04:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://webfadoni.com/noticia/google-esta-usando-machine-learning-para-melhorar-o-chrome</loc>
+  <lastmod>2022-06-10T04:04:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
