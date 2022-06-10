@@ -1,6 +1,7 @@
 import { CssBaseline, Drawer } from '@mui/material';
 import '@nextcss/reset';
-import AppProps, { GetStaticPaths, GetStaticProps } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import Link from 'next/link';
 import { GoogleAnalytics, usePagesViews } from 'nextjs-google-analytics';
