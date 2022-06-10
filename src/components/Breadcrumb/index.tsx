@@ -1,15 +1,19 @@
-import { Breadcrumbs } from "@mui/material";
-import Link from "next/link";
+import { Breadcrumbs } from '@mui/material';
+import Link from 'next/link';
 
-import styles from "./breadcrumb.module.scss";
+import styles from './breadcrumb.module.scss';
 
-export default function Breadcrumb() {
+interface Props {
+  titulo: string;
+}
+
+export default function Breadcrumb({ titulo }: Props) {
   return (
     <Breadcrumbs aria-label="breadcrumb" className={styles.breadcrumbRoot}>
       <Link href="/">
         <a>Início</a>
       </Link>
-      <p>Google lança 3 novos cursos com certificados profissionalizantes</p>
+      <p>{titulo}</p>
     </Breadcrumbs>
   );
 }

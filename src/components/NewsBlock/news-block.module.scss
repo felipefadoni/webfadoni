@@ -1,0 +1,44 @@
+.secondary {
+  position: relative;
+  display: block;
+  a {
+    .text {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+      padding: 3rem 0.5rem 0.5rem 0.5rem;
+      width: 100%;
+      time {
+        font-size: 0.7rem;
+        color: #fff;
+        margin-bottom: 8px;
+        display: block;
+        transition: color 0.2s;
+      }
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 8px;
+        display: block;
+        color: #fff;
+        transition: color 0.2s;
+        line-height: 1.3rem;
+      }
+    }
+
+    img {
+      transition: all 1s;
+    }
+    &:hover {
+      time,
+      h3,
+      p {
+        color: #ed0678;
+      }
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

@@ -4,11 +4,14 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/",
-        destination: "/home",
+        source: '/',
+        destination: '/home',
       },
     ];
   },
+  images: {
+    domains: ['localhost', 'pubimg.band.uol.com.br', 'www.cnet.com', 'www.zdnet.com', 'blog.logrocket.com'],
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

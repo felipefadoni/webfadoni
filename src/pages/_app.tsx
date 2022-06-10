@@ -1,16 +1,19 @@
 import { CssBaseline, Drawer } from '@mui/material';
 import '@nextcss/reset';
-import type { AppProps } from 'next/app';
+import AppProps, { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
+import { GoogleAnalytics, usePagesViews } from 'nextjs-google-analytics';
 import { useState } from 'react';
-import { MdHomeFilled, MdMarkChatUnread } from 'react-icons/md';
+import { MdHomeFilled } from 'react-icons/md';
 import { Footer, Header, HeaderBanner } from '../components';
 
 import '../styles/global.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [openMenu, setOpenMenu] = useState(false);
+
+  usePagesViews();
 
   const toggleDrawer = () => (event: KeyboardEvent | MouseEvent) => {
     if (
@@ -47,14 +50,6 @@ function MyApp({ Component, pageProps }: AppProps) {
                 </a>
               </Link>
             </li>
-            <li>
-              <Link href="/contato">
-                <a title="Fale Conosco">
-                  <MdMarkChatUnread size={24} />
-                  <span>Fale Conosco</span>
-                </a>
-              </Link>
-            </li>
           </ul>
         </div>
       </Drawer>
@@ -63,8 +58,23 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Footer />
       <CssBaseline />
+      <GoogleAnalytics />
     </>
   );
 }
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: ['/', '/contato'],
+    fallback: true,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {},
+    revalidate: 60 * 60,
+  };
+};
 
 export default MyApp;
