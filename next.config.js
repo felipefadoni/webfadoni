@@ -18,7 +18,6 @@ const nextConfig = {
       'blog.logrocket.com',
       'cdn.pixabay.com',
       'res.cloudinary.com',
-      '*',
     ],
   },
 };
