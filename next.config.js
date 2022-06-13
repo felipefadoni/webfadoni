@@ -17,6 +17,8 @@ const nextConfig = {
       'www.zdnet.com',
       'blog.logrocket.com',
       'cdn.pixabay.com',
+      'res.cloudinary.com',
+      '*',
     ],
   },
 };
