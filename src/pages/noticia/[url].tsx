@@ -62,25 +62,27 @@ export default function Post({ noticia }: Props) {
           </Container>
         ) : null}
 
-        <Container>
-          <Grid container mb={2}>
-            <Grid item xs={12} mb={1}>
-              <Image
-                src={noticia.imagem}
-                alt="WebFadoni"
-                loading="eager"
-                layout="responsive"
-                height="488"
-                width="868"
-              />
-            </Grid>
-            {noticia?.imagemDescricao ? (
-              <Grid item xs={12}>
-                <h5>{noticia?.imagemDescricao}</h5>
+        {noticia.imagem ? (
+          <Container>
+            <Grid container mb={2}>
+              <Grid item xs={12} mb={1}>
+                <Image
+                  src={noticia.imagem}
+                  alt="WebFadoni"
+                  loading="eager"
+                  layout="responsive"
+                  height="488"
+                  width="868"
+                />
               </Grid>
-            ) : null}
-          </Grid>
-        </Container>
+              {noticia?.imagemDescricao ? (
+                <Grid item xs={12}>
+                  <h5>{noticia?.imagemDescricao}</h5>
+                </Grid>
+              ) : null}
+            </Grid>
+          </Container>
+        ) : null}
 
         <Container>
           <Grid container>

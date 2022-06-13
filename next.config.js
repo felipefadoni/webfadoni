@@ -19,6 +19,7 @@ const nextConfig = {
       'cdn.pixabay.com',
       'res.cloudinary.com',
       '*',
+      'dev-to-uploads.s3.amazonaws.com',
     ],
   },
 };
