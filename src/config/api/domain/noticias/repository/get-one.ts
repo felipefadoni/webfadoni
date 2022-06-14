@@ -14,11 +14,5 @@ export async function getOneNoticia({ url }: Props) {
 
   const getFirst = first(getNoticia.data) as NoticiaVisualizarProps;
 
-  const noticia = { ...getFirst, time: format(parseISO(getFirst.createdAt), 'dd/MMM/yyyy HH:mm') };
-
-  return {
-    props: {
-      noticia,
-    },
-  };
+  return { ...getFirst, time: format(parseISO(getFirst.createdAt), 'dd/MMM/yyyy HH:mm') };
 }
