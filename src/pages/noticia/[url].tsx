@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import { Breadcrumb } from '../../components';
 
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { NoticiaVisualizarProps } from 'src/config/api/domain/noticias/interface/noticias';
 import { getOneNoticia } from 'src/config/api/domain/noticias/repository';
 import styles from './noticia-id.module.scss';
@@ -110,8 +110,15 @@ export default function Post({ noticia }: Props) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+export const getServerSideProps: GetStaticProps = async ({ params }) => {
   const { url } = params as { url: string };
 
-  return await getOneNoticia({ url });
+  const getNoticia = await getOneNoticia({ url });
+
+  return {
+    revalidate: 60 * 60 * 24 * 7,
+    props: {
+      ...getNoticia.props,
+    },
+  };
 };

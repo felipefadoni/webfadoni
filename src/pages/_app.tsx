@@ -67,7 +67,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: ['/', '/contato'],
+    paths: ['/'],
     fallback: true,
   };
 };
