@@ -18,7 +18,7 @@ const nextConfig = {
       'blog.logrocket.com',
       'cdn.pixabay.com',
       'res.cloudinary.com',
-      '*',
+      'www.syncfusion.com',
       'dev-to-uploads.s3.amazonaws.com',
     ],
   },
