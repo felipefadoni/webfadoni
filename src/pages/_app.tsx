@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import { CssBaseline, Drawer } from '@mui/material';
 import '@nextcss/reset';
 import { GetStaticPaths, GetStaticProps } from 'next';
@@ -25,6 +26,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
     setOpenMenu(!openMenu);
   };
+
+  const showBanner = false;
 
   return (
     <>
@@ -56,7 +59,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </div>
       </Drawer>
       <Header handleOpenMenu={() => setOpenMenu(true)} />
-      <HeaderBanner />
+      {showBanner ? <HeaderBanner /> : null}
       <Component {...pageProps} />
       <Footer />
       <CssBaseline />
