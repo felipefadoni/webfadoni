@@ -43,6 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Autour+One&display=swap" rel="stylesheet" />
+        <meta name="google-site-verification" content="zJ_LU_ZKB4tFtNg28sp-iXE_Rh1dgEeu94Gia2AjJT8" />
       </Head>
       <Drawer open={openMenu} onClose={toggleDrawer()}>
         <div className="options-menu">
